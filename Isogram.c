@@ -23,11 +23,7 @@ int main(void)
     }
 
     if (repeat == 1) 
-    {
         printf("The word/phrase is not an isogram\n");
-    }
     else 
-    {
         printf("The word/phrase is an isogram\n");
-    }
 }
