@@ -5,25 +5,29 @@ int main(void)
 {
     char str1[50];
     int repeat = 0;
-    printf("Enter word\n");
+    printf("Enter word/phrase\n");
     scanf("%s",str1);
 
-    for (int i = 0; i < strlen(str1); i++) {
-        for (int j = i + 1; j < strlen(str1); j++) {
-            if (str1[i] == str1[j]) {
+    for (int i = 0; i < strlen(str1); i++) 
+    {
+        for (int j = i + 1; j < strlen(str1); j++) 
+        {
+            if (str1[i] == str1[j]) 
+            {
                 repeat = 1;
                 break;
             }
-            if (repeat == 1) {
+            if (repeat == 1)
                 break;
-            }
         }
     }
 
-    if (repeat == 1) {
-        printf("The word is not an isogram\n");
+    if (repeat == 1) 
+    {
+        printf("The word/phrase is not an isogram\n");
     }
-    else {
-        printf("The word is an isogram\n");
+    else 
+    {
+        printf("The word/phrase is an isogram\n");
     }
 }
