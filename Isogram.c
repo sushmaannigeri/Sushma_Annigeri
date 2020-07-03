@@ -6,7 +6,7 @@ int main(void)
     char str1[50];
     int repeat = 0;
     printf("Enter word/phrase\n");
-    scanf("%s",str1);
+    scanf("%s",&str1);
 
     for (int i = 0; i < strlen(str1); i++) 
     {
